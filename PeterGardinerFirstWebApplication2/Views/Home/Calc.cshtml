@@ -5,25 +5,28 @@
     ViewBag.Title = "Calc Grades Bruh";
 }
 
+@model PeterGardinerFirstWebApplication2.Models.Class
+
 <body>
     <h2>Grade Calculator</h2>
     <form method="post">
         <label>Enter Assignments Total %:</label>
-        <input id="assignment" name="assignment" placeholder="%" />
+        <input id="assignment" asp-for="assignment" placeholder="%" />
         <br />
         <label>Enter Group Projects Total %:</label>
-        <input id="project" name="assignment" placeholder="%" />
+        <input id="project" asp-for="assignment" placeholder="%" />
         <br />
         <label>Enter Quizzes Total %:</label>
-        <input id="quiz" name="quiz" placeholder="%" />
+        <input id="quiz" asp-for="quiz" placeholder="%" />
         <br />
         <label>Enter Exams Total %:</label>
-        <input id="exams" name="exams" placeholder="%" />
+        <input id="exams" asp-for="exams" placeholder="%" />
         <br />
         <label>Enter Intex Total %:</label>
-        <input id="intex" name="intex" placeholder="%" />
+        <input id="intex" asp-for="intex" placeholder="%" />
         <br />
-        <input type="submit" name="submitbutton" value="calculate" id="submitbutton" />
+        <input type="submit" value="calculate" id="submitbutton" />
+        <div asp-validation-summary="All"></div>
     </form>
 
 </body>
