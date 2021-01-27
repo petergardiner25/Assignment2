@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace PeterGardinerFirstWebApplication2.Models
 {
+    //model for grade calculator
     public class Class
     {
+        //range for allowed inputs
         [Range(0, 100)]
         public int assignment { get; set; }
         [Range(0,100)]
