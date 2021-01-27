@@ -1,22 +1,20 @@
-﻿var submit = $("submitbutton");
-
-submit.addEventListener("click", function(){
+﻿$("#submitButton").click(function () {
     let assignment = $('assignment').value;
-    let project = document.getElementById('project').value;
-    let quiz = document.getElementById('quiz').value;
-    let exam = document.getElementById('exams').value;
-    let intex = document.getElementById('intex').value;
-    let grade = " "
+    let project = $('project').value;
+    let quiz = $('quiz').value;
+    let exam = $('exams').value;
+    let intex = $('intex').value;
+    let grade = " ";
 
     //find weighted %
     assignmentW = assignment * .5;
     projectW = project * .1;
     quizW = quiz * .1;
     examW = exam * .2;
-    intexW = intex * .1; 
+    intexW = intex * .1;
 
     //add to find total
-    total = assignmentW + projectW + quizW + examW + intexW; 
+    total = assignmentW + projectW + quizW + examW + intexW;
 
     //if to calculate letter grade
     if (total >= 94) {
@@ -59,5 +57,3 @@ submit.addEventListener("click", function(){
     //display letter grade
     alert('You got an ' + grade + ' with ' + total + '%');
 });
-
-
