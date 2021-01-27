@@ -1,9 +1,9 @@
 ﻿$("#submitButton").click( function () {
-    let assignment = $('#assignment').val();
-    let project = $('#project').val();
-    let quiz = $('#quiz').val();
-    let exam = $('#exams').val();
-    let intex = $('#intex').val();
+    let assignment = $("#assignment").val();
+    let project = $("#project'").val();
+    let quiz = $("#quiz'").val();
+    let exam = $("#exams").val();
+    let intex = $("#intex").val();
     let grade = " ";
 
     //find weighted %
