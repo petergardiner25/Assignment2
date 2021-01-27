@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PeterGardinerFirstWebApplication2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,14 @@ namespace PeterGardinerFirstWebApplication2.Controllers
             return View();
         }
 
+        [HttpGet("Calc")]
         public IActionResult Calc()
+        {
+            return View();
+        }
+
+        [HttpPost("Calc")]
+        public IActionResult Calc(Class model)
         {
             return View();
         }

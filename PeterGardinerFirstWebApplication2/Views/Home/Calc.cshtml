@@ -7,24 +7,23 @@
 
 <body>
     <h2>Grade Calculator</h2>
-    <form>
+    <form method="post">
         <label>Enter Assignments Total %:</label>
-        <input id="assignment" placeholder="%" />
+        <input id="assignment" name="assignment" placeholder="%" />
         <br />
         <label>Enter Group Projects Total %:</label>
-        <input id="project" placeholder="%" />
+        <input id="project" name="assignment" placeholder="%" />
         <br />
         <label>Enter Quizzes Total %:</label>
-        <input id="quiz" placeholder="%" />
+        <input id="quiz" name="quiz" placeholder="%" />
         <br />
         <label>Enter Exams Total %:</label>
-        <input id="exams" placeholder="%" />
+        <input id="exams" name="exams" placeholder="%" />
         <br />
         <label>Enter Intex Total %:</label>
-        <input id="intex" placeholder="%" />
+        <input id="intex" name="intex" placeholder="%" />
         <br />
-        <input type="submit" value="calculate" id="submitbutton" />
+        <input type="submit" name="submitbutton" value="calculate" id="submitbutton" />
     </form>
-    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/Javascripter.js"></script>
+
 </body>
