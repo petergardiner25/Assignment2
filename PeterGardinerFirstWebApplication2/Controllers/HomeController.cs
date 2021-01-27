@@ -12,5 +12,10 @@ namespace PeterGardinerFirstWebApplication2.Controllers
         {
             return View();
         }
+
+        public IActionResult Calc()
+        {
+            return View();
+        }
     }
 }

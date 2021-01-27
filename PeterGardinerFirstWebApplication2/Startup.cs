@@ -22,6 +22,16 @@ namespace PeterGardinerFirstWebApplication2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                //Add error page
+            }
+
+
             app.UseNodeModules();
             app.UseStaticFiles();
 
