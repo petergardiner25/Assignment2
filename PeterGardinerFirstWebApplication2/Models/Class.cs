@@ -8,7 +8,7 @@ namespace PeterGardinerFirstWebApplication2.Models
 {
     public class Class
     {
-        [Required]
+        [Range(0, 100)]
         public int assignment { get; set; }
         [Range(0,100)]
         public int quiz { get; set; }
@@ -16,8 +16,8 @@ namespace PeterGardinerFirstWebApplication2.Models
         public int exams { get; set; }
         [Range(0, 100)]
         public int intex { get; set; }
-        [Range(0, 100)]
+     
 
 
-    }
+    };
 }
