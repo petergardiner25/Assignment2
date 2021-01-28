@@ -1,5 +1,6 @@
-﻿$("#submitbutton").click(function () {
+﻿var submit = $("submitbutton");
 
+submit.addEventListener("click", function () {
     let assignment = $("#assignment").val();
     let project = $("#project'").val();
     let quiz = $("#quiz'").val();
