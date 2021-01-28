@@ -1,4 +1,4 @@
-﻿$("#submitButton").click(function () {
+﻿$("#submitbutton").click(function () {
 
     let assignment = $("#assignment").val();
     let project = $("#project'").val();
