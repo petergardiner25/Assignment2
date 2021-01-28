@@ -1,6 +1,4 @@
-﻿var submit = document.getElementById("submitbutton");
-
-submit.addEventListener("click", function () {
+﻿$("#submitbutton").click( function () {
     let assignment = $("#assignment").val();
     let project = $("#project'").val();
     let quiz = $("#quiz'").val();
